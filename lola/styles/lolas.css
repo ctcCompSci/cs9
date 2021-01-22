@@ -1,0 +1,19 @@
+body {
+    background: rgb(255, 160, 176);
+    
+}
+
+.container {
+    font-style:Georgia, serif;
+    color: darkcyan;
+}
+
+p {
+    font-size: 30px;
+  }
+  h1 {text-align: center;}
+  p1 {text-align: center;}
+  h1{font-size:25px;}
+  h2{font-size:33px;}
+  h3{font-size:40px;}
+  h4{font-size:30px;}

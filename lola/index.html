@@ -9,50 +9,146 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <style>
-        /* put css here */
-    </style>
+    <link rel="stylesheet" href="./styles/lolas.css">
     <script>
             // js goes here
     </script>
 </head>
 
 <body>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
-                <a class="navbar-brand" href="#">CS9</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a class="navbar-brand" href="#">CS9</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../jeff/index.html">Teacher's Site</a>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Student Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../leah/index.html">Leah's Site</a>
+                        <a class="dropdown-item" href="../sydney/index.html">Sydney's Site</a>
+                        <a class="dropdown-item active" href="../lola/index.html">Lola's Site</a>
+                        <a class="dropdown-item" href="../desmond/index.html">Desmundo's Site</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <h2></h2>
+        </div>
+        <div class="w3-container">
+        </div>
+
+
+
+        <h2>WELCOME TO LOLA'S PAGE!!</h2>
+
+    </div>
+
+    <div class="container">
+        <h4> </h4>
+
+        <body>
+
+            <p> Hello my name is Lola short for Loliana and here some things about me. </p>
+        </body>
+
+        <body>
+
+            <ol>
+                <h1>
+                    <marquee behavior="scroll" direction="left fast">
+                        <li>
+                            <a href="hobbies.html"> ⭐ WHAT I LIKE TO DO ⭐ </a>
                         </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="../jeff/index.html">Teacher's Site</a>
+                        <li>
+                            <a href="places.html"> ✈️ MY FAVORITE PLACES TO GO ✈️</a>
                         </li>
-        
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Student Pages
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="../leah/index.html">Leah's Site</a>
-                                <a class="dropdown-item" href="../sydney/index.html">Sydney's Site</a>
-                                <a class="dropdown-item active" href="../lola/index.html">Lola's Site</a>
-                                <a class="dropdown-item" href="../desmond/index.html">Desmundo's Site</a>
-                            </div>
+                       <li>
+                            <a href="school.html"> 🏫SCHOOL LIFE📖 </a>
                         </li>
-                    </ul>
-                </div>
-            </nav>
-        
-            <div class="container">
-                <h1>Welcome to Lola's Page!</h1>
-            </div>
+                    </marquee>
+                </h1>
+
+            </ol>
+
+        </body>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width,  
+                initial-scale=1.0" />
+
+            <title>Digital Clock</title>
+
+            <style>
+                #clock {
+                    font-size: 60px;
+                    width: 400px;
+                    margin: 200px;
+                    text-align: center;
+                    border: 10px solid rgba(255, 75, 195, 0.397);
+                    border-radius: 15px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div id="clock">10:15</div>
+
+            <script> 
+                setInterval(showTime, 1000);
+                function showTime() {
+                    let time = new Date();
+                    let hour = time.getHours();
+                    let min = time.getMinutes();
+                    let sec = time.getSeconds();
+                    am_pm = "AM";
+
+                    if (hour > 10) {
+                        hour -= 10;
+                        am_pm = "PM";
+                    }
+                    if (hour == 0) {
+                        hr = 12;
+                        am_pm = "AM";
+                    }
+
+                    hour = hour < 10 ? "0" + hour : hour;
+                    min = min < 10 ? "0" + min : min;
+                    sec = sec < 10 ? "0" + sec : sec;
+
+                    let currentTime = hour + ":"
+                        + min + ":" + sec + am_pm;
+
+                    document.getElementById("clock")
+                        .innerHTML = currentTime;
+                }
+
+                showTime(); 
+            </script>
+        </body>
+
+        </html>
 </body>
+
+</html>
 
 </html>
