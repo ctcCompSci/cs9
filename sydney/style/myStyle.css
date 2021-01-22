@@ -1,0 +1,39 @@
+body {
+    background: black;
+
+}
+
+.container-fluid {
+    text-shadow: 2px 2px white, 4px 4px 0 #9c9c9c, 6px 6px 0px #CE0000;
+    text-align: center;
+    color: white;
+}
+.list {
+    text-align: left;
+}
+#introduction {
+    color: red;
+    text-align: left;
+    background: black;
+    text-shadow: 2px 2px 0 white;
+}
+.parenthetical-statement {
+    font-size: 10px;
+    text-shadow: 2px 2px black;
+    padding-left: 50px;
+    color: red;
+}
+h5 .hope #like{
+    color:darkgrey;
+}
+a {
+    color: rgb(11, 192, 192);
+}
+h1 #title{
+    text-decoration: underline;
+}
+#clockbox{
+    color:white;
+    size:10px;
+    text-shadow: 2px 2px blue;
+}
