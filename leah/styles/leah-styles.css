@@ -1,0 +1,44 @@
+.container-fluid {
+    font-family: comic sans MS;
+    color:white;
+    font-weight:bold;
+    padding-left:20px;
+    text-align:center;
+}
+body {
+    background:#145A32;
+    font-family: comic sans MS;
+    font-weight:bold;
+}
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+    text-align:center;
+    font-family: comic sans MS;
+    color:white;
+    font-weight:bold;
+
+  }
+  .content {
+      font-family:comic sans MS;
+      color:white;
+      font-weight:bold;
+      text-align:left;
+  }
+.all-lists {
+    font-weight:bold;
+    text-align:left;
+}
+#hobby-content {
+    font-weight:bold;
+    text-align:center;
+}
+#clock-wrapper {
+    color:white;
+    font-weight:bold;
+    padding-left:15px;
+}
+#date-time {
+    font-weight:bold;
+    color:white;
+}
