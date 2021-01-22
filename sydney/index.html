@@ -1,6 +1,8 @@
 <html>
 
 <head>
+
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 	 crossorigin="anonymous">
 
@@ -8,16 +10,41 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./style/myStyle.css"></link>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="./js/syndey.js">
+	</script>
 
 	<style>
-		/* put css here */
+		.hope {
+			text-shadow: 2px 2px black;
+		}
+
+
+		#Date-and-time {
+			color: white;
+			text-shadow: 1px 1px rgb(238, 238, 99);
+			margin-bottom: .1px;
+			padding-bottom: .1px;
+		}
+
+		.ml12 {
+			font-weight: 200;
+			font-size: 2.215em;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+
+		.ml12 .letter {
+			display: inline-block;
+			line-height: 1em;
+		}
+		
 	</style>
-	<script>
-            // js goes here
-	</script>
 </head>
 
 <body>
+
 	<nav class="navbar bg-dark navbar-dark navbar-expand-lg">
 		<a class="navbar-brand" href="#">CS9</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -29,17 +56,13 @@
 				<li class="nav-item">
 					<a class="nav-link" href="../index.html">Home</a>
 				</li>
-
 				<li class="nav-item">
 					<a class="nav-link" href="../jeff/index.html">Teacher's Site</a>
 				</li>
-
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-					 aria-expanded="false">
-						Student Pages
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 aria-expanded="false">Student Pages </a>
+					<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="../leah/index.html">Leah's Site</a>
 						<a class="dropdown-item active" href="../sydney/index.html">Sydney's Site</a>
 						<a class="dropdown-item" href="../lola/index.html">Lola's Site</a>
@@ -50,11 +73,38 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<h1>Welcome to My (Sydney's) Page! :D</h1>
+	<div id="clock-wrapper">
+		<p>
+			<h4 id='Date-and-time'>Date and Time:</h4>
+		</p>
+		<div id="clockbox"></div>
 	</div>
 
-	<!-- html goes here -->
+	<div class="container-fluid">
+		<h1 id="title" class="ml12">
+			Welcome to my (Sydney's) Page!
+		</h1>
+		<h2 id="introduction">This website is an assignment for Computer Science in the Ninth Grade class (CS9). Through this website, you're going to
+			get to know me a little better !</h2>
+		<h2>This website will go over the following:
+			<il class="list">
+				<li>
+					<a href="hobbies.html">My Hobbies</a>
+				</li>
+				<li>
+					<a href="dream.html">My Dream For The Future</a>
+				</li>
+				<li>
+					<a href="likes.html">Things I Like</a>
+					<br>
+					<div class="parenthetical-statement" id="parenthetical-statement">(its different than hobbies i promise)</div>
+				</li>
+			</il>
+		</h2>
+		<h5 class="hope" id=like>
+			<em>Hope you like it !</em>
+		</h5>
+	</div>
 </body>
 
 </html>
