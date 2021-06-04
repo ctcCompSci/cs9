@@ -3,7 +3,7 @@ debug = true
 playerImg = nil -- this is just for storage
 
 function love.load(arg)
-    -- playerImg = love.graphics.newImage('assets/plane.png')
+    playerImg = love.graphics.newImage('assets/test.png')
     --we now have an asset ready to be used inside Love
 end
 
@@ -13,5 +13,5 @@ end
 
 
 function love.draw(dt)
-    -- love.graphics.draw(playerImg, 100, 100)
+    love.graphics.draw(playerImg, 100, 100)
 end
